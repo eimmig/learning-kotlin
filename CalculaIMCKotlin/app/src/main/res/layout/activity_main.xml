@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/tVPeso"/>
+
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Peso em Kg"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tVPeso"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Altura"
+        app:layout_constraintStart_toStartOf="@id/tVPeso"
+        app:layout_constraintTop_toBottomOf="@id/etPeso" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etAltura"
+        android:hint="Altura em m"
+        android:inputType="numberDecimal"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etPeso"
+        app:layout_constraintStart_toEndOf="@id/tvAltura"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvIMC"
+        android:text="IMC: "
+        app:layout_constraintTop_toBottomOf="@id/etAltura"
+        app:layout_constraintStart_toStartOf="@id/tvAltura"
+        android:padding="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResultado"
+        android:text="0.0 "
+        app:layout_constraintTop_toBottomOf="@id/etAltura"
+        app:layout_constraintStart_toEndOf="@id/tvIMC"
+        android:padding="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btCalcular"
+        android:text="Calcular"
+        app:layout_constraintTop_toBottomOf="@id/tvResultado"
+        app:layout_constraintStart_toStartOf="@id/tvResultado" />
+
+    <Space
+        android:layout_width="20dp"
+        android:id="@+id/spacer"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvResultado"
+        app:layout_constraintStart_toEndOf="@id/btCalcular"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btLimpar"
+        android:text="Limpar"
+        app:layout_constraintTop_toBottomOf="@id/tvResultado"
+        app:layout_constraintStart_toEndOf="@id/spacer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
