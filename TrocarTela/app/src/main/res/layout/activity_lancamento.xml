@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LancamentoActivity">
+
+    <TextView
+        android:id="@+id/tvCodLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Cod:"
+        app:layout_constraintBottom_toBottomOf="@+id/etCodLancamento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etCodLancamento" />
+
+    <EditText
+        android:id="@+id/etCodLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/tvCodLancamento"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQtdLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtd:"
+        app:layout_constraintBottom_toBottomOf="@+id/etQtdLancamento"
+        app:layout_constraintStart_toStartOf="@+id/tvCodLancamento"
+        app:layout_constraintTop_toTopOf="@+id/etQtdLancamento" />
+
+    <EditText
+        android:id="@+id/etQtdLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/etCodLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/etCodLancamento" />
+
+    <TextView
+        android:id="@+id/tvValorLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor:"
+        app:layout_constraintBottom_toBottomOf="@+id/etValorLancamento"
+        app:layout_constraintStart_toStartOf="@+id/tvQtdLancamento"
+        app:layout_constraintTop_toTopOf="@+id/etValorLancamento" />
+
+    <EditText
+        android:id="@+id/etValorLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/etQtdLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/etQtdLancamento" />
+
+    <Button
+        android:id="@+id/btConfirmarLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btConfirmarOnClick"
+        android:text="Confirmar"
+        app:layout_constraintStart_toEndOf="@+id/tvValorLancamento"
+        app:layout_constraintTop_toBottomOf="@+id/etValorLancamento" />
+
+    <Button
+        android:id="@+id/btListarLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="btListarOnClick"
+        android:text="Listar"
+        app:layout_constraintBottom_toBottomOf="@+id/btConfirmarLancamento"
+        app:layout_constraintStart_toEndOf="@+id/btConfirmarLancamento" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

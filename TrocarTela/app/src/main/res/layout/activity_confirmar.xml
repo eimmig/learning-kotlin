@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmarActivity">
+
+    <TextView
+        android:id="@+id/tvCodConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Cod:"
+        app:layout_constraintBottom_toBottomOf="@+id/etCodConfirmar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etCodConfirmar" />
+
+    <TextView
+        android:id="@+id/etCodConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toEndOf="@+id/tvCodConfirmar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/tvQtdConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtd:"
+        app:layout_constraintBottom_toBottomOf="@+id/etQtdConfirmar"
+        app:layout_constraintStart_toStartOf="@+id/tvCodConfirmar"
+        app:layout_constraintTop_toTopOf="@+id/etQtdConfirmar" />
+
+    <TextView
+        android:id="@+id/etQtdConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/etCodConfirmar"
+        app:layout_constraintTop_toBottomOf="@+id/etCodConfirmar"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/tvValorConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor:"
+        app:layout_constraintBottom_toBottomOf="@+id/etValorConfirmar"
+        app:layout_constraintStart_toStartOf="@+id/tvQtdConfirmar"
+        app:layout_constraintTop_toTopOf="@+id/etValorConfirmar" />
+
+    <TextView
+        android:id="@+id/etValorConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/etQtdConfirmar"
+        app:layout_constraintTop_toBottomOf="@+id/etQtdConfirmar"
+        tools:text="123" />
+
+    <Button
+        android:id="@+id/btConfirmarConfirmar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="btConfirmarOnClick"
+        android:text="Confirmar"
+        app:layout_constraintStart_toEndOf="@+id/tvValorConfirmar"
+        app:layout_constraintTop_toBottomOf="@+id/etValorConfirmar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
