@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/cod_combustivel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/cidade_abastecimento"
+        app:layout_constraintStart_toStartOf="@+id/etCod"
+        app:layout_constraintTop_toBottomOf="@+id/etCod" />
+
+    <TextView
+        android:id="@+id/tvQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/quantidade_litros"
+        app:layout_constraintStart_toStartOf="@+id/tvCidade"
+        app:layout_constraintTop_toBottomOf="@+id/etCidade" />
+
+    <EditText
+        android:id="@+id/etCod"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:labelFor="@id/tvCod"
+        app:layout_constraintStart_toStartOf="@+id/tvCod"
+        app:layout_constraintTop_toBottomOf="@+id/tvCod" />
+
+    <Button
+        android:id="@+id/btPesquisar"
+        android:onClick="btPesquisarOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/pesquisar"
+        app:layout_constraintStart_toEndOf="@+id/etCod"
+        app:layout_constraintTop_toTopOf="@+id/etCod" />
+
+    <EditText
+        android:id="@+id/etCidade"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/tvCidade"
+        app:layout_constraintTop_toBottomOf="@+id/tvCidade" />
+
+    <Button
+        android:id="@+id/btIncluir"
+        android:onClick="btIncluirOnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/incluir_registros"
+        app:layout_constraintStart_toStartOf="@+id/etQuantidade"
+        app:layout_constraintTop_toBottomOf="@+id/etQuantidade" />
+
+    <Button
+        android:id="@+id/btSomarQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:onClick="btSomarQuantidadeOnClick"
+        android:text="@string/somar_quantidade"
+        app:layout_constraintStart_toEndOf="@+id/btIncluir"
+        app:layout_constraintTop_toTopOf="@+id/btIncluir" />
+
+    <EditText
+        android:id="@+id/etQuantidade"
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvQuantidade"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuantidade" />
+
+    <Button
+        android:id="@+id/btExtra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Extra"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">prova-1</string>
+    <string name="cod_combustivel">Cod. Combustivel</string>
+    <string name="cidade_abastecimento">Cidade Abastecimento:</string>
+    <string name="quantidade_litros">Quantidade Litros:</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="incluir_registros">Incluir Registros</string>
+    <string name="somar_quantidade">Somar Quantidade</string>
+    <string name="voltar">Voltar</string>
+</resources>
