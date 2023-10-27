@@ -1,4 +1,4 @@
-package br.edu.utfpr.tiptime_2023_2
+package br.edu.utfpr.tiptime
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

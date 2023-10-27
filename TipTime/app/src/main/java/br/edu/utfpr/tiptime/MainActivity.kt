@@ -1,8 +1,10 @@
-package br.edu.utfpr.tiptime_2023_2
+package br.edu.utfpr.tiptime
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.edu.utfpr.tiptime_2023_2.R
 import br.edu.utfpr.tiptime_2023_2.databinding.ActivityMainBinding
+import java.text.NumberFormat
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,11 +19,14 @@ class MainActivity : AppCompatActivity() {
             calculateTip()
         }
 
+        binding.tipsResult.text = getString(R.string.tip_amount_s, "0")
+
     }
 
     private fun calculateTip() {
         val stringInTextField = binding.costOfService.text.toString()
-        val cost = stringInTextField.toDouble()
+
+        val cost = stringInTextField.toDoubleOrNull() ?: return
 
         val selectedId = binding.tipOption.checkedRadioButtonId
         val tipPercentage = when ( selectedId ) {
@@ -38,6 +43,8 @@ class MainActivity : AppCompatActivity() {
             tip = kotlin.math.ceil( tip )
         }
 
-        //como valorizar o TextView que está com %s???????
+        val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
+
+        binding.tipsResult.text = getString(R.string.tip_amount_s, formattedTip)
     }
 }

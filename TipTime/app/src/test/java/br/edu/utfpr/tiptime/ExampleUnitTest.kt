@@ -1,4 +1,4 @@
-package br.edu.utfpr.tiptime_2023_2
+package br.edu.utfpr.tiptime
 
 import org.junit.Test
 
