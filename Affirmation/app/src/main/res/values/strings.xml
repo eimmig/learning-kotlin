@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Affirmation</string>
+    <string name="affirmation1">Quando tudo estiver dando errado, se acostume.</string>
+    <string name="affirmation2">Você não pode mudar o seu passado, porém pode estragar seu futuro.</string>
+    <string name="affirmation3">Tudo passa, até as coisas ruins vão embora para coisas terríveis chegarem.</string>
+    <string name="affirmation4">Não sabendo que era impossível, foi lá e soube.</string>
+    <string name="affirmation5">É só uma fase ruim, logo vai piorar.</string>
+    <string name="affirmation6">O mérito da derrota é todinho seu, orgulhe-se.</string>
+    <string name="affirmation7">Tem gente, igual a você, que é igual nuvem. A gente olha e vê um animal.</string>
+    <string name="affirmation8">Arrisque, tente, lute, mostre para você mesmo o quanto é incapaz.</string>
+    <string name="affirmation9">O segredo do sucesso é fazer o contrário do você está fazendo.</string>
+    <string name="affirmation10">É por isso que a sua família faz churrasco sem você.</string>
+</resources>
